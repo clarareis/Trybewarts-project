@@ -19,7 +19,7 @@
   color: white;
 }
 
-.trybewarts-login{
+.trybewarts-login {
   display: flex;
   align-items: center;
 }
@@ -88,3 +88,4 @@ footer {
   padding: 6px;
   font-size: 0.8em;
 }
+
