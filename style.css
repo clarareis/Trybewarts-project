@@ -7,9 +7,16 @@ height: 50px;
 }
 
 #evaluation-form {
-  display: flex;
+  display: inline;
   flex-direction: column;
   width: 675px;
+}
+
+#input-lastname{
+  display: inline-block;
+  /* background-color: red; */
+  flex-direction: row;
+  align-items: flex-end;
 }
 
 #trybewarts-header-title {
@@ -93,5 +100,9 @@ footer {
   flex-direction: row;
   justify-content: flex-end;
   height: 500px;
+}
+
+#title-form{
+  align-items: flex-start;
 }
 
