@@ -10,4 +10,4 @@ function validation() {
 }
 
 //  EVENTOS
-sendButton.addEventListener('click', validation);
+// sendButton.addEventListener('click', validation);

@@ -88,3 +88,10 @@ footer {
   font-size: 0.8em;
 }
 
+#trybewarts-forms-logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 500px;
+}
+
