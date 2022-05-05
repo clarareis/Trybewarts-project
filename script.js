@@ -4,8 +4,8 @@ const agreement = document.getElementById('agreement');
 
 // FUNÇÕES
 function validation() {
-  if(!agreement.checked) {
-    alert("Por favor, concorde com o uso das informações antes de enviar o formulário!");
+  if (!agreement.checked) {
+    alert('Por favor, concorde com o uso das informações antes de enviar o formulário!');
   }
 }
 
