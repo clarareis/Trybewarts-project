@@ -13,15 +13,8 @@ height: 50px;
   width: 675px;
 }
 
-#evaluation-form input:nth-of-type(){
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
 #input-lastname{
   display: inline-block;
-  /* background-color: red; */
   flex-direction: row;
   align-items: flex-end;
 }
