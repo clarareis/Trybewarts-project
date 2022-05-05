@@ -54,14 +54,10 @@ main {
 }
 
 #families {
-  display: flex;
-  flex-direction: column;
   margin: 5px 20px;
 }
 
 #tools {
-  display: flex;
-  flex-direction: column;
   margin: 5px 20px;
 }
 

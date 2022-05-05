@@ -2,16 +2,11 @@
 const sendButton = document.getElementById('submit-btn');
 const agreement = document.getElementById('agreement');
 
-// FUNÇÕES
-function validation() {
-  if (!agreement.checked) {
-    alert('Por favor, concorde com o uso das informações antes de enviar o formulário!');
-    sendButton.disabled = true;
-  } else {
+sendButton.disabled = true;
+
+function send() {
+  if (agreement.checked) {
     sendButton.disabled = false;
   }
-  console.log(sendButton);
 }
-
-//  EVENTOS
-sendButton.addEventListener('click', validation);
+agreement.addEventListener('click', send);
