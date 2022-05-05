@@ -8,6 +8,3 @@ function validation() {
     alert('Por favor, concorde com o uso das informações antes de enviar o formulário!');
   }
 }
-
-//  EVENTOS
-// sendButton.addEventListener('click', validation);
