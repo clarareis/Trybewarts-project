@@ -6,7 +6,11 @@ const agreement = document.getElementById('agreement');
 function validation() {
   if (!agreement.checked) {
     alert('Por favor, concorde com o uso das informações antes de enviar o formulário!');
+    sendButton.disabled = true;
+  } else {
+    sendButton.disabled = false;
   }
+  console.log(sendButton);
 }
 
 //  EVENTOS
