@@ -5,6 +5,17 @@ const counter = document.getElementById('counter');
 const loginButton = document.getElementById('login-button');
 const loginEmail = document.getElementById('login-email');
 const loginSenha = document.getElementById('login-senha');
+const form = document.getElementById('evaluation-form').value;
+const inputName = document.getElementById('input-name').value;
+const inputLastName = document.getElementById('input-lastname').value;
+const email = document.getElementById('input-email').value;
+const house = document.getElementById('house').value;
+const family = document.getElementById('families').value;
+const subject = document.getElementById('label-content').value;
+const assessment = document.getElementById('label-rate').value;
+const observation = document.getElementById('textarea').value;
+var printscreen = '';
+
 
 sendButton.disabled = true;
 
@@ -32,3 +43,13 @@ function button(event) {
 }
 
 loginButton.addEventListener('click', button);
+
+function printform() {
+  printscreen = form;
+  inputName.innerHTML = printscreen;
+}
+printform()
+
+/* sendButton.addEventListener('click', () => {
+  console.log(printform());
+}); */

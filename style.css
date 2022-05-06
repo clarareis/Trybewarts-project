@@ -22,7 +22,7 @@
 #trybewarts-header-title {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   color: white;
 }
 
@@ -39,7 +39,7 @@
   width: 100px;
   border-radius: 8px;
   color: white;
-  text-align: center;
+  justify-content: center;
 }
 
 .trybewarts-login input {
@@ -114,4 +114,21 @@ footer {
   height: 50px;
   width: 50px;
   border-right: 20px;
+  margin-left: 10px;
+}
+
+#part-one-form input {
+  background-color: white;
+  padding: 8px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  margin: 5px
+}
+
+#part-one-form select {
+  background-color: white;
+  padding: 8px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  margin: 5px
 }
