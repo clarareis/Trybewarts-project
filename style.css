@@ -1,15 +1,22 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-  background-color: rgb(50, 167, 145);
-  width: 100%;
-  height: 50px;
+.header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: rgb(50, 167, 145);
+width: 100%;
+height: 50px;
 }
 
 #evaluation-form {
   display: flex;
   flex-direction: column;
   width: 675px;
+}
+
+#input-lastname{
+  display: inline-block;
+  flex-direction: row;
+  align-items: flex-end;
 }
 
 #trybewarts-header-title {
@@ -91,3 +98,20 @@ footer {
   font-size: 0.8em;
 }
 
+#trybewarts-forms-logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 500px;
+}
+
+#title-form{
+  align-items: flex-start;
+}
+
+.trybewarts-header-logo {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  border-right: 20px;
+}

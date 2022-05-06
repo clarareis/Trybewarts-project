@@ -10,6 +10,7 @@ function send() {
     sendButton.disabled = false;
   }
 }
+
 agreement.addEventListener('click', send);
 
 function wordsCount() {
