@@ -44,12 +44,19 @@ function button(event) {
 
 loginButton.addEventListener('click', button);
 
-function printform() {
-  printscreen = form;
-  inputName.innerHTML = printscreen;
+function printform(value) {
+  return {
+    Nome: inputName + inputLastName,
+    Email: email,
+    Casa: house,
+    Família: family,
+    Matérias: subject,
+    Avaliação: assessment,
+    Observações: observation,
+  };
 }
-printform()
 
-/* sendButton.addEventListener('click', () => {
-  console.log(printform());
-}); */
+sendButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  alert(printform);
+});
