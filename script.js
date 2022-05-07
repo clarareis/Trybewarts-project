@@ -5,17 +5,6 @@ const counter = document.getElementById('counter');
 const loginButton = document.getElementById('login-button');
 const loginEmail = document.getElementById('login-email');
 const loginSenha = document.getElementById('login-senha');
-const form = document.getElementById('evaluation-form').value;
-const inputName = document.getElementById('input-name').value;
-const inputLastName = document.getElementById('input-lastname').value;
-const email = document.getElementById('input-email').value;
-const house = document.getElementById('house').value;
-const family = document.getElementById('families').value;
-const subject = document.getElementById('label-content').value;
-const assessment = document.getElementById('label-rate').value;
-const observation = document.getElementById('textarea').value;
-var printscreen = '';
-
 
 sendButton.disabled = true;
 
@@ -44,19 +33,39 @@ function button(event) {
 
 loginButton.addEventListener('click', button);
 
-function printform(value) {
-  return {
-    Nome: inputName + inputLastName,
-    Email: email,
-    Casa: house,
-    Família: family,
-    Matérias: subject,
-    Avaliação: assessment,
-    Observações: observation,
+function printform() {
+  const printscreen = {
+    Nome: document.getElementById('input-name').value,
+    Sobrenome: document.getElementById('input-lastname').value,
+    Email: document.getElementById('input-email').value,
+    Casa: document.getElementById('house').value,
+    Família: document.querySelector('input[name="family"]:checked').value,
+    Matérias: document.querySelectorAll('input[type="checkbox"]:checked'),
+    Avaliação: document.querySelector('input[name="rate"]:checked').value,
+    Observações: document.getElementById('textarea').value,
   };
+  return printscreen;
+}
+
+function subjects() {
+  const subjectsSelect = printform().Matérias;
+  const subjectsArray = [];
+  for (let index = 0; index < subjectsSelect.length; index += 1) {
+    subjectsArray.push(subjectsSelect[index].value);
+  }
+  return subjectsArray.join(', ');
 }
 
 sendButton.addEventListener('click', (event) => {
   event.preventDefault();
-  alert(printform);
+  const inputs = printform();
+  const formPrint = document.getElementById('evaluation-form');
+  formPrint.innerHTML = `Nome: ${inputs.Nome} ${inputs.Sobrenome}
+  Email: ${inputs.Email}
+  Casa: ${inputs.Casa}
+  Família: ${inputs.Família}
+  Avaliação: ${inputs.Avaliação}
+  Matérias: ${subjects()}
+  Observações: ${inputs.Observações}
+  `;
 });
