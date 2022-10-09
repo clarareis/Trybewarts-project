@@ -4,6 +4,8 @@ Este projeto foi realizado em dupla com [Larissa Menezes](https://github.com/lar
 
 Prazo de entrega de 01 dia.
 
+Visite nosso projeto em clicando [aqui](<https://clarareis.github.io/Trybewarts-project/>)
+
 <details>
   <summary><strong>:memo: Habilidades Desenvolvidas</strong></summary><br />
 
