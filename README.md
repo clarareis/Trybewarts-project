@@ -42,3 +42,5 @@ Após feito o fork, clone o repositório criado para o seu computador.
 Rode o `npm install`.
 
 </details>
+
+<img src="/images/project-trybeWarts.png" alt="My project"/>
